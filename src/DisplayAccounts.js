@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from "react-router-dom";
+import Navbar from "./Navbar";
 
 function useGetAccounts() {
     // sets up local state inside function
@@ -28,7 +29,7 @@ function DisplayAccounts() {
 
     return (
         <div className="accounts">
-                <Link to="/">Squabank Home</Link>
+            <Navbar></Navbar>
             <h1> { accountElements }</h1>
         </div>
     )
